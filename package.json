@@ -10,7 +10,8 @@
     "start:storybook": "APP_ENV=storybook npx react-native start --reset-cache",
     "test": "jest",
     "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prestorybook": "rnstl"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.2",
@@ -44,6 +45,7 @@
     "prettier": "^2.4.1",
     "react-dom": "^18.2.0",
     "react-native-dotenv": "^3.4.7",
+    "react-native-storybook-loader": "^2.0.5",
     "react-test-renderer": "18.2.0",
     "typescript": "4.8.4"
   },
