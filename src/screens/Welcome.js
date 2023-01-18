@@ -2,7 +2,11 @@ import React from 'react';
 
 import {ScreenTemplate, Button, Input, Text} from '../atoms';
 
-const Welcome = () => {
+const Welcome = ({navigation}) => {
+  const handleButton = () => {
+    navigation.navigate('confirmation');
+  };
+
   return (
     <ScreenTemplate>
       <Text label="Welcome" />
@@ -10,11 +14,7 @@ const Welcome = () => {
       <Input placeholder="Address" />
       <Input placeholder="City" />
       <Input placeholder="Phone" />
-      <Button
-        label="Send"
-        action={() => console.log('pressed!')}
-        disabled={false}
-      />
+      <Button label="Send" action={handleButton} disabled={false} />
     </ScreenTemplate>
   );
 };
