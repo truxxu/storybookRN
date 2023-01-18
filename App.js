@@ -1,15 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
 
 import {IS_STORYBOOK} from '@env';
 import StorybookUI from './storybook';
+import {Welcome} from './src/screens';
 
 const App = () => {
-  return (
-    <View>
-      <Text>App</Text>
-    </View>
-  );
+  return <Welcome />;
 };
 
 module.exports = IS_STORYBOOK ? StorybookUI : App;
