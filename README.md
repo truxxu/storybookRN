@@ -33,7 +33,7 @@ inlineRequires: false
 
 ```
 npm run storybook
-npx react-native start
+npm run start:storybook
 npx react-native run-ios
 ```
 

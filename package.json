@@ -7,6 +7,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
+    "start:storybook": "APP_ENV=storybook npx react-native start --reset-cache",
     "test": "jest",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook"
